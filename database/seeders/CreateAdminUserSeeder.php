@@ -77,12 +77,9 @@ class CreateAdminUserSeeder extends Seeder
         $role->syncPermissions($permissions);
         $teacher->assignRole([$role->id]);
 
-        $role=Role::create(['name' => 'teacher']);
-        $role->syncPermissions($permissions);
+
         $teacher2->assignRole([$role->id]);
 
-        $role=Role::create(['name' => 'teacher']);
-        $role->syncPermissions($permissions);
         $teacher3->assignRole([$role->id]);
 
 
