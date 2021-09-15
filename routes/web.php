@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\PermissionController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+Route::get('test',function(){
+    return view('test');
+});
+
 
 Route::get('/', function () {
     return redirect()->route('login');
